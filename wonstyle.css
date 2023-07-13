@@ -1,0 +1,101 @@
+
+.stars{
+    position: absolute;
+    width: 504px;
+height: 297px;
+top: 70px;
+left: 483px;
+}
+.cup{
+    position: absolute;
+    width: 200.4320831298828px;
+height: 201px;
+top: 170px;
+left: 635px;
+color:  #FFD233;
+}
+.hurray{
+    font-family: roboto;
+    position: absolute;
+font-size: 91px;
+font-weight: 600;
+line-height: 107px;
+letter-spacing: 0.1em;
+text-align: center;
+width: 464px;
+height: 86px;
+top: 388px;
+left: 517px;
+color:white;
+}
+.won{
+    font-family: roboto;
+    position: absolute;
+font-size: 41px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0.1em;
+text-align: center;
+width: 467px;
+height: 48px;
+top: 500px;
+left: 517px;
+color: #FFFF;
+}
+#rules-button{
+    position: absolute;
+    width: 119px;
+height: 40px;
+top: 650px;
+left: 1385px;
+border-radius: 10px;
+border: 2px solid #FFFFFF;
+font-size: 21px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #FFFFFF;
+background-color:rgba(140, 196, 97, 1) ;
+cursor: pointer;
+}
+.Game_Rules{
+    position:absolute;
+    width: 303px;
+    height: 367px;
+    left: 1220px;
+    top: 270px;
+
+}
+.close-button{
+    position: absolute;
+    width:55px;
+    top: 275px;
+    left: 1460px;
+    font-size: 50px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+    background-color: red;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+#play-again-button{
+    position: absolute;
+    width: 174px;
+height: 44px;
+top: 610px;
+left: 665px;
+border-radius: 10px;
+border: 2px solid #FFFFFF;
+background: #FFFFFF;
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #6B6B6B;
+font-family: Roboto;
+cursor: pointer;
+}

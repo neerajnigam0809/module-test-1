@@ -1,0 +1,512 @@
+.score{
+  display: flex;
+  position: absolute;
+  height: 158px;
+  border: 2px solid #FFFFFF;
+  border-radius: 13px;
+  width:800px;
+  height: 158px;
+  top:69px;
+  left:400px;
+}
+* {
+  padding : 0;
+  margin: 0;
+}
+.game-rock-title{
+  position: absolute;
+  width: 135px;
+height: 37px;
+top: 16px;
+left: 18px;
+font-size: 40px;
+font-weight: 600;
+line-height: 47px;
+letter-spacing: 0.1em;
+text-align: left;
+color:#FFFFFF;
+}
+.game-paper-title{
+  position:absolute;
+  width: 150px;
+  height: 37px;
+  top: 58px;
+  left: 18px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #FFFFFF;
+}
+.game-scissors-title{
+  position: absolute;
+  width: 235px;
+height: 37px;
+top: 101px;
+left: 18px;
+font-size: 40px;
+font-weight: 600;
+line-height: 47px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+.c-score{
+  position: absolute;
+  width: 139px;
+  height: 128px;
+  top: 15px;
+  left: 473px;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+}
+.c-score-title{
+  position: absolute;
+  width: 103px;
+height: 20px;
+top: 7px;
+left: 13px;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #656565;
+}
+.cs-score-title{
+  position: absolute;
+  width: 61px;
+height: 16px;
+top: 29px;
+left: 37px;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #656565;
+}
+.cs_score{
+  position: absolute;
+  width: 79px;
+height: 63px;
+top: 50px;
+left: 29px;
+font-size: 68px;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+color: #252525;
+}
+.y-score{
+  position: absolute;
+  width: 139px;
+  height: 128px;
+  top: 15px;
+  left: 641px;
+  border-radius: 9px;
+  background-color: #FFFFFF;
+}
+.y-score-title{
+  position: absolute;
+  width: 50px;
+height: 16px;
+top: 7px;
+left: 35px;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #656565;
+}
+.ys-score-title{
+  position: absolute;
+  width: 61px;
+height: 16px;
+top: 29px;
+left: 30px;
+font-size: 17px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #656565;
+}
+.ys_score{
+  position: absolute;
+  width: 79px;
+height: 63px;
+top: 50px;
+left: 29px;
+font-size: 68px;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+color: #252525;
+}
+.line1{
+  position: absolute;
+  width: 152px;
+top: 454px;
+left: 800px;
+z-index: -1;
+}
+.line2{
+  position: absolute;
+  width: 95px;
+top: 498px;
+left: 937px;
+z-index: -1;
+}
+.line3{
+  position: absolute;
+  width: 95px;
+top: 521px;
+left: 787px;
+z-index: -1;
+}
+
+.game-area{
+  position: absolute;
+  top: -70px;
+  left: -90px;
+}
+.rock_circle{
+  position:absolute;
+  width: 160px;
+  height: 160px;
+  top: 400px;
+  left: 690px;
+   cursor: pointer;
+}
+
+.scissors_circle{
+  position: absolute;
+  width: 160px;
+height: 160px;
+top: 400px;
+left: 933px;
+cursor: pointer;
+}
+
+.paper_circle{
+  position: absolute;
+  width: 160px;
+height: 160px;
+top: 600px;
+left: 820px;
+cursor: pointer;
+}
+
+
+.user_result{
+  position: absolute;
+  width: 130px;
+height: 16px;
+top: 330px;
+left: 505px;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF;
+}
+#win-circle{
+  position:absolute;
+  width: 300px;
+height: 300px;
+top: 360px;
+left: 408px;
+border-radius: 50%;
+box-shadow: 0px 1px 62px 0px #00000021;
+z-index: -1;
+}
+#lost-circle{
+  position:absolute;
+  width: 300px;
+height: 300px;
+top: 360px;
+left: 870px;
+z-index: -1;
+border-radius: 50%;
+box-shadow: 0px 1px 62px 0px #00000021;
+}
+#user-rock-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#user-paper-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#user-scissor-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+
+#cpu-rock-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-paper-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-scissor-win{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#user-rock-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+
+}
+#user-paper-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#user-scissor-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#cpu-rock-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-paper-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-scissor-lost{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#user-rock-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#user-paper-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#user-scissor-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 462px;
+  display: none;
+}
+#cpu-rock-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-paper-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+#cpu-scissor-tie{
+  position:absolute;
+  width: 190px;
+  height: 190px;
+  top: 415px;
+  left: 924px;
+  display:none;
+}
+.cpu_result{
+  position: absolute;
+  width: 130px;
+height: 16px;
+top: 330px;
+left: 965px;
+font-size: 17px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: left;
+color: #FFFFFF; 
+}
+.title-won{
+  width: 209px;
+  height: 36px;
+  top: 445px;
+  left: 685px;
+  color: #FFFFFF;
+ position: absolute;
+ font-family: Roboto;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+  
+.title-against{
+  position: absolute;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  width: 168px;
+  height: 31px;
+  top: 510px;
+  left: 710px;
+  color: #FFFFFF;
+}
+#play-again-button{
+  position: absolute;
+  width: 174px;
+height: 44px;
+top: 565px;
+left: 708px;
+border-radius: 9px;
+border: 2px solid #FFFFFF;
+background: #FFFFFF;
+font-size: 15px;
+font-weight: 600;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #6B6B6B;
+cursor: pointer;
+}
+
+#win-area{
+  display: none;
+}
+#lost-area{
+  display:none;
+}
+#tie-area{
+  display: none;
+}
+
+
+#rules-button{
+  position: absolute;
+  width: 119px;
+height: 40px;
+top: 650px;
+left: 1385px;
+border-radius: 10px;
+border: 2px solid #FFFFFF;
+font-size: 21px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #FFFFFF;
+background-color:rgba(140, 196, 97, 1) ;
+cursor: pointer;
+}
+.Game_Rules{
+  position:absolute;
+  width: 303px;
+  height: 367px;
+  left: 1220px;
+  top: 270px;
+
+}
+.close-button{
+  position: absolute;
+  width:55px;
+  top: 275px;
+  left: 1460px;
+  font-size: 50px;
+  border: 5px solid #FFFFFF;
+  border-radius: 100%;
+  background-color: red;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+#next-button{
+  position: absolute;
+  width: 119px;
+height: 40px;
+top: 650px;
+left: 1200px;
+border-radius: 10px;
+border: 2px solid #FFFFFF;
+font-size: 21px;
+font-weight: 600;
+line-height: 25px;
+letter-spacing: 0.1em;
+text-align: center;
+color: #FFFFFF;
+background-color:rgba(140, 196, 97, 1) ;
+display: none;
+cursor: pointer;
+}
